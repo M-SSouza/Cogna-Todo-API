@@ -17,6 +17,11 @@ namespace Cogna.API.Controllers
         }
 
         // GET: api/Todos
+        /// <summary>
+        /// Recupera todos os registros TODOs.
+        /// </summary>
+        /// <returns>Lista de TODOs.</returns>
+        /// <response code="200">Sucesso.</response>
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -24,6 +29,12 @@ namespace Cogna.API.Controllers
         }
 
         // POST api/Todos
+        /// <summary>
+        /// Cadastra um novo TODO.
+        /// </summary>
+        /// <param name="model">Informações do novo TODO.</param>
+        /// <returns>TODO criado.</returns>
+        /// <response code="200">Sucesso.</response>
         [HttpPost]
         public IActionResult Post(AddTodoInputModel model)
         {
@@ -33,24 +44,39 @@ namespace Cogna.API.Controllers
         }
 
         // PUT api/Todos/5
+        /// <summary>
+        /// Modifica um TODO.
+        /// </summary>
+        /// <param name="id">Id do TODO a ser modificado.</param>
+        /// <param name="model">Informações do TODO a ser modificado.</param>
+        /// <returns>TODO editado.</returns>
+        /// <response code="404">Algo não ocorreu bem.</response>
+        /// <response code="204">Modificado.</response>
         [HttpPut("{id}")]
         public IActionResult Put(int id, UpdateTodoInputModel model)
         {
             bool success = _todosService.Update(id, model);
 
-            if (success)
+            if (!success)
                 return NotFound();
 
             return NoContent();
         }
 
         // DELETE api/Todos/5
+        /// <summary>
+        /// Deleta um TODO.
+        /// </summary>
+        /// <param name="id">Id do TODO a ser deletado.</param>
+        /// <returns>TODO deletado.</returns>
+        /// <response code="404">Algo não ocorreu bem.</response>
+        /// <response code="200">Sucesso.</response>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             bool success = _todosService.Delete(id);
 
-            if (success)
+            if (!success)
                 return NotFound();
 
             return Ok();
