@@ -15,5 +15,12 @@
         public string? Description { get; private set; }
         public DateTime CretedAt { get; private set; }
         public DateTime? FinishedAt { get; private set; }
+
+        public void Update(string? title, string? description, DateTime? finishedAt)
+        {
+            Title = title;
+            Description = description;
+            FinishedAt = finishedAt;
+        }
     }
 }
