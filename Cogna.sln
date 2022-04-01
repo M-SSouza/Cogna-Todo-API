@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32314.265
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogna.API", "Cogna.API\Cogna.API.csproj", "{ED9B57D7-0DA1-4B4F-BAD9-C5758E7D1C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogna.API", "Cogna.API\Cogna.API.csproj", "{ED9B57D7-0DA1-4B4F-BAD9-C5758E7D1C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogna.Infrastructure", "Cogna.Infrastructure\Cogna.Infrastructure.csproj", "{873378D6-DE12-49F4-A145-80E0B75523A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogna.Application", "Cogna.Application\Cogna.Application.csproj", "{60C1BBBC-5E66-41C1-BDF0-9FB3896F6D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogna.Core", "Cogna.Core\Cogna.Core.csproj", "{80DF65C4-3A38-47C1-8434-CE3FE4A0155C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{ED9B57D7-0DA1-4B4F-BAD9-C5758E7D1C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED9B57D7-0DA1-4B4F-BAD9-C5758E7D1C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED9B57D7-0DA1-4B4F-BAD9-C5758E7D1C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873378D6-DE12-49F4-A145-80E0B75523A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873378D6-DE12-49F4-A145-80E0B75523A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873378D6-DE12-49F4-A145-80E0B75523A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873378D6-DE12-49F4-A145-80E0B75523A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C1BBBC-5E66-41C1-BDF0-9FB3896F6D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C1BBBC-5E66-41C1-BDF0-9FB3896F6D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C1BBBC-5E66-41C1-BDF0-9FB3896F6D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C1BBBC-5E66-41C1-BDF0-9FB3896F6D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DF65C4-3A38-47C1-8434-CE3FE4A0155C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DF65C4-3A38-47C1-8434-CE3FE4A0155C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DF65C4-3A38-47C1-8434-CE3FE4A0155C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DF65C4-3A38-47C1-8434-CE3FE4A0155C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
